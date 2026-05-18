@@ -1,0 +1,25 @@
+a) Redirect the output of mv command to a file named outfile
+mv file1 file2 > outfile
+
+b) List all hidden files under current directory and store in hidden file
+ls -d .* > hidden
+
+c) Assign write permission to group user and remove execute permission from owner for file test using absolute method
+chmod 626 test
+
+d) Create soft link and hard link for a given file
+Hard Link
+ln file1 hardlink
+
+Soft Link
+ln -s file1 softlink
+
+e) Convert lowercase to uppercase of a given file
+tr 'a-z' 'A-Z' < file1
+
+f) Extract 2nd and 3rd character of a given file
+cut -c2-3 file1
+
+g) Display how many times lines are repeated in a given file
+sort file1 | uniq -c
+

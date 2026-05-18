@@ -1,0 +1,14 @@
+i) Redirect output of cp command to file outfile
+cp file1 file2 > outfile
+
+ii) Select lines having 4-letter words and store in list
+grep '\b....\b' outfile > list
+
+iii) Give write permission to owner and remove read permission from group user for file test
+chmod u+w,g-r test
+
+iv) Create alias ls to show all files including hidden files
+alias ls='ls -a'
+
+v) Count number of words in list file
+wc -w list

@@ -1,0 +1,33 @@
+i) Redirect output of cat command to file outfile
+cat file1 > outfile
+
+ii) List all hidden files in current directory and store in hidden file
+ls -d .* > hidden
+
+iii) Give write permission to owner and remove execute permission from others for file test by absolute way
+chmod 620 test
+
+Explanation
+Owner = read + write = 6
+Group = write = 2
+Others = no execute = 0
+
+
+iv) Create soft link and hard link for a file
+Hard Link
+ln file1 hardlink
+Soft Link
+ln -s file1 softlink
+
+v) Convert lowercase to uppercase of a file
+tr 'a-z' 'A-Z' < file1
+
+OR store into another file:
+
+tr 'a-z' 'A-Z' < file1 > upperfile
+
+vi) Extract 1st and 10th character of a file
+cut -c1,10 file1
+
+vii) Display how many times lines are repeated in a file
+sort file1 | uniq -c

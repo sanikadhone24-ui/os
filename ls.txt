@@ -1,0 +1,14 @@
+i) Redirect output of ls command to file outfile
+ls > outfile
+
+ii) Select lines containing at least one digit and redirect to list
+grep '[0-9]' outfile > list
+
+iii) Give execute permission to owner and remove read permission from others for file test
+chmod u+x,o-r test
+
+iv) Create alias rm to delete files interactively
+alias rm='rm -i'
+
+v) Count currently logged-in users
+who | wc -l
