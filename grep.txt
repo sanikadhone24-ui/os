@@ -1,0 +1,15 @@
+vi) Redirect output of grep command to a file named outfile
+grep "pattern" file1 > outfile
+
+vii) Select lines containing digits and store in list
+grep '[0-9]' outfile > list
+
+viii) Relative permission change for file test
+chmod g-w,o+x test
+
+ix) Create alias rm for interactive delete
+alias rm='rm -i'
+
+x) Count currently logged-in users
+who | wc -l
+

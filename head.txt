@@ -1,0 +1,26 @@
+viii. Redirect output of head command to a file outfile
+head filename > outfile
+
+ix. List all hidden files and store in “hidden” file
+ls -a | grep "^\." > hidden
+
+x. Assign write permission to owner and remove execute permission from others (absolute way)
+chmod u+w,o-x test
+
+xi. Create soft and hard link for a given file
+
+Soft link:
+ln -s original_file softlink_name
+
+Hard link:
+ln original_file hardlink_name
+
+xii. Convert lowercase to uppercase of a given file
+tr 'a-z' 'A-Z' < inputfile > outputfile
+
+xiii. Extract 1st and 10th character of a given file
+cut -c1,10 filename
+
+xiv. Display how many times lines are repeated in a given file
+sort filename | uniq -c
+
